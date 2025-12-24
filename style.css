@@ -1,85 +1,92 @@
 * {
   box-sizing: border-box;
-  -webkit-tap-highlight-color: transparent;
 }
 
 html, body {
   margin: 0;
   padding: 0;
   height: 100%;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto;
   background: #ece5dd;
 }
 
-button, input {
-  font-size: 16px;
-}
-
+/* ---------- PAGE 1 & 2 ---------- */
 .center {
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  height: 100vh;
+  padding: 24px;
+}
+
+h2, h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
 }
 
 input {
-  width: 90%;
-  padding: 14px;
-  border-radius: 8px;
+  width: 100%;
+  padding: 18px;
+  font-size: 18px;
+  border-radius: 12px;
   border: 1px solid #ccc;
-  margin-bottom: 10px;
+  margin-bottom: 14px;
 }
 
 button {
-  width: 90%;
-  padding: 14px;
-  border-radius: 25px;
+  width: 100%;
+  padding: 18px;
+  font-size: 18px;
+  border-radius: 30px;
   border: none;
   background: #25d366;
   color: white;
   font-weight: bold;
 }
 
+/* ---------- EMOTIONS ---------- */
 .moods {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 12px;
+  gap: 16px;
   padding: 20px;
 }
 
 .moods button {
-  background: #fff;
+  background: white;
   color: #111;
-  border-radius: 14px;
+  font-size: 18px;
+  padding: 20px;
+  border-radius: 16px;
 }
 
+/* ---------- CHAT PAGE ---------- */
 .chat-body {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  background: #ece5dd;
 }
 
 .header {
   background: #075e54;
-  color: #fff;
-  padding: 14px;
-  font-weight: bold;
+  color: white;
+  padding: 18px;
+  font-size: 20px;
 }
 
 .messages {
   flex: 1;
-  padding: 10px;
+  padding: 16px;
   overflow-y: auto;
 }
 
 .msg {
-  max-width: 75%;
-  padding: 10px 12px;
-  border-radius: 12px;
-  margin-bottom: 6px;
-  font-size: 15px;
+  max-width: 80%;
+  padding: 14px 16px;
+  border-radius: 16px;
+  font-size: 17px;
+  margin-bottom: 10px;
+  line-height: 1.4;
 }
 
 .me {
@@ -91,21 +98,25 @@ button {
   background: #fff;
 }
 
+/* ---------- INPUT BAR ---------- */
 .input-bar {
   display: flex;
-  padding: 8px;
+  padding: 12px;
   background: #f0f0f0;
 }
 
 .input-bar input {
   flex: 1;
-  border-radius: 20px;
-  padding: 12px;
-  margin-right: 6px;
+  padding: 16px;
+  font-size: 17px;
+  border-radius: 30px;
+  border: none;
 }
 
 .input-bar button {
-  width: auto;
-  padding: 0 18px;
+  width: 56px;
+  height: 56px;
+  margin-left: 8px;
   border-radius: 50%;
+  font-size: 16px;
 }
