@@ -186,3 +186,9 @@ html, body {
   font-size: 22px;
   margin-bottom: 14px;
 }
+
+/* ===== REMOVE PAGE SCROLL (PAGE 1 & 2) ===== */
+.no-scroll {
+  height: 100vh;
+  overflow: hidden;
+}
