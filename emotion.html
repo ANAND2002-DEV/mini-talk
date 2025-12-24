@@ -5,24 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
-<h3>Select Your Mood</h3>
+<body class="emotion-page">
 
-<div class="moods">
-  <button onclick="setMood('LOVE')">LOVE</button>
-  <button onclick="setMood('HAPPY')">HAPPY</button>
-  <button onclick="setMood('SAD')">SAD</button>
-  <button onclick="setMood('ANGRY')">ANGRY</button>
-  <button onclick="setMood('MISSING')">MISSING</button>
-  <button onclick="setMood('BEING TURNED ON')">BEING TURNED ON</button>
-</div>
+  <h2 class="emotion-title">Select Your Mood</h2>
 
-<hr>
-<div id="status"></div>
+  <div class="moods">
+    <button onclick="setMood('LOVE')">LOVE</button>
+    <button onclick="setMood('HAPPY')">HAPPY</button>
+    <button onclick="setMood('SAD')">SAD</button>
+    <button onclick="setMood('ANGRY')">ANGRY</button>
+    <button onclick="setMood('MISSING')">MISSING</button>
+    <button onclick="setMood('BEING TURNED ON')">BEING TURNED ON</button>
+  </div>
 
-<button onclick="goChat()">Continue to Chat</button>
+  <div id="status" class="mood-status"></div>
 
-<script src="app.js"></script>
+  <button class="continue-btn" onclick="goChat()">Continue</button>
+
+  <script src="app.js"></script>
 </body>
 </html>
-
