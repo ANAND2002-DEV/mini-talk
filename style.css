@@ -1,6 +1,7 @@
-/* ===== GLOBAL ===== */
+/* ================= GLOBAL ================= */
 * {
   box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
 }
 
 html, body {
@@ -9,9 +10,45 @@ html, body {
   height: 100%;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto;
   background: #ece5dd;
+  color: #111;
 }
 
-/* ===== PAGE 2 (EMOTION PAGE) ===== */
+/* ================= PAGE 1 – NAME ================= */
+.center {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 24px;
+}
+
+.center h2 {
+  font-size: 26px;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.center input {
+  width: 100%;
+  padding: 18px;
+  font-size: 18px;
+  border-radius: 14px;
+  border: 1px solid #ccc;
+  margin-bottom: 16px;
+}
+
+.center button {
+  width: 100%;
+  padding: 18px;
+  font-size: 18px;
+  border-radius: 30px;
+  border: none;
+  background: #25d366;
+  color: white;
+  font-weight: bold;
+}
+
+/* ================= PAGE 2 – EMOTIONS ================= */
 .emotion-page {
   min-height: 100vh;
   padding: 24px;
@@ -23,40 +60,34 @@ html, body {
 .emotion-title {
   font-size: 26px;
   margin-bottom: 20px;
-  color: #111;
 }
 
-/* 🔥 FORCE VERTICAL EMOTIONS */
+/* FORCE VERTICAL */
 .moods {
   width: 100%;
   display: flex !important;
   flex-direction: column !important;
   align-items: center !important;
   gap: 18px;
-  margin-top: 10px;
 }
 
-/* Emotion Buttons */
 .moods button {
-  width: 100% !important;
-  max-width: 360px !important;
-  padding: 20px !important;
-  font-size: 18px !important;
-  border-radius: 18px !important;
+  width: 100%;
+  max-width: 360px;
+  padding: 20px;
+  font-size: 18px;
+  border-radius: 18px;
   border: none;
   background: #ffffff;
-  color: #111;
   font-weight: 600;
 }
 
-/* Mood status text */
 .mood-status {
-  margin-top: 24px;
+  margin-top: 22px;
   font-size: 16px;
-  color: #333;
+  color: #444;
 }
 
-/* Continue button */
 .continue-btn {
   margin-top: auto;
   width: 100%;
@@ -70,3 +101,88 @@ html, body {
   font-weight: bold;
 }
 
+/* ================= PAGE 3 – CHAT (WHATSAPP FEEL) ================= */
+.chat-body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* WhatsApp-style header */
+.header {
+  height: 60px;
+  background: #075e54;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 0 14px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* Messages */
+.messages {
+  flex: 1;
+  padding: 14px;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Chat bubbles */
+.msg {
+  max-width: 78%;
+  padding: 14px 16px;
+  border-radius: 16px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+.me {
+  background: #dcf8c6;
+  margin-left: auto;
+}
+
+.other {
+  background: #ffffff;
+}
+
+/* Input bar */
+.input-bar {
+  height: 64px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background: #f0f0f0;
+}
+
+.input-bar input {
+  flex: 1;
+  padding: 16px;
+  font-size: 16px;
+  border-radius: 30px;
+  border: none;
+}
+
+.input-bar button {
+  width: 52px;
+  height: 52px;
+  margin-left: 8px;
+  border-radius: 50%;
+  border: none;
+  background: #25d366;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* ================= PAGE 4 – CREATOR ================= */
+.creator-page {
+  padding: 20px;
+}
+
+.creator-page h3 {
+  font-size: 22px;
+  margin-bottom: 14px;
+}
