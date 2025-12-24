@@ -46,11 +46,23 @@ button {
 
 /* ---------- EMOTIONS ---------- */
 .moods {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 16px;
+  display: flex;
+  gap: 12px;
   padding: 20px;
+  overflow-x: auto;
+  justify-content: center;
 }
+
+.moods button {
+  flex: 0 0 auto;
+  min-width: 140px;
+}
+
+.moods button {
+  flex: 0 0 auto;
+  min-width: 140px;
+}
+
 
 .moods button {
   background: white;
@@ -120,3 +132,4 @@ button {
   border-radius: 50%;
   font-size: 16px;
 }
+
