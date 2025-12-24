@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Name Setup</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="center">
+  <h2>Welcome</h2>
+  <input id="name" placeholder="Enter your name">
+  <button onclick="saveName()">Continue</button>
+
+<script src="app.js"></script>
+<script>
+function saveName(){
+  const name = document.getElementById('name').value.trim();
+  if(!name) return alert("Enter name");
+  localStorage.setItem("myName", name);
+  location.href = "emotion.html";
+}
+</script>
+</body>
+</html>
