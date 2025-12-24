@@ -1,3 +1,4 @@
+/* ===== GLOBAL ===== */
 * {
   box-sizing: border-box;
 }
@@ -10,31 +11,56 @@ html, body {
   background: #ece5dd;
 }
 
-/* ---------- PAGE 1 & 2 ---------- */
-.center {
-  height: 100vh;
+/* ===== PAGE 2 (EMOTION PAGE) ===== */
+.emotion-page {
+  min-height: 100vh;
+  padding: 24px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  padding: 24px;
+  align-items: center;
 }
 
-h2, h3 {
-  font-size: 24px;
+.emotion-title {
+  font-size: 26px;
   margin-bottom: 20px;
+  color: #111;
 }
 
-input {
+/* 🔥 FORCE VERTICAL EMOTIONS */
+.moods {
   width: 100%;
-  padding: 18px;
-  font-size: 18px;
-  border-radius: 12px;
-  border: 1px solid #ccc;
-  margin-bottom: 14px;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  gap: 18px;
+  margin-top: 10px;
 }
 
-button {
+/* Emotion Buttons */
+.moods button {
+  width: 100% !important;
+  max-width: 360px !important;
+  padding: 20px !important;
+  font-size: 18px !important;
+  border-radius: 18px !important;
+  border: none;
+  background: #ffffff;
+  color: #111;
+  font-weight: 600;
+}
+
+/* Mood status text */
+.mood-status {
+  margin-top: 24px;
+  font-size: 16px;
+  color: #333;
+}
+
+/* Continue button */
+.continue-btn {
+  margin-top: auto;
   width: 100%;
+  max-width: 360px;
   padding: 18px;
   font-size: 18px;
   border-radius: 30px;
@@ -43,106 +69,4 @@ button {
   color: white;
   font-weight: bold;
 }
-
-/* ---------- EMOTIONS ---------- */
-.moods {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 16px;
-  padding: 24px;
-}
-
-.moods button {
-  width: 100%;
-  max-width: 320px;
-  padding: 20px;
-  font-size: 18px;
-  border-radius: 18px;
-}
-
-.moods button {
-  flex: 0 0 auto;
-  min-width: 140px;
-}
-
-.moods button {
-  flex: 0 0 auto;
-  min-width: 140px;
-}
-
-
-.moods button {
-  background: white;
-  color: #111;
-  font-size: 18px;
-  padding: 20px;
-  border-radius: 16px;
-}
-
-/* ---------- CHAT PAGE ---------- */
-.chat-body {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-
-.header {
-  background: #075e54;
-  color: white;
-  padding: 18px;
-  font-size: 20px;
-}
-
-.messages {
-  flex: 1;
-  padding: 16px;
-  overflow-y: auto;
-}
-
-.msg {
-  max-width: 80%;
-  padding: 14px 16px;
-  border-radius: 16px;
-  font-size: 17px;
-  margin-bottom: 10px;
-  line-height: 1.4;
-}
-
-.me {
-  background: #dcf8c6;
-  margin-left: auto;
-}
-
-.other {
-  background: #fff;
-}
-
-/* ---------- INPUT BAR ---------- */
-.input-bar {
-  display: flex;
-  padding: 12px;
-  background: #f0f0f0;
-}
-
-.input-bar input {
-  flex: 1;
-  padding: 16px;
-  font-size: 17px;
-  border-radius: 30px;
-  border: none;
-}
-
-.input-bar button {
-  width: 56px;
-  height: 56px;
-  margin-left: 8px;
-  border-radius: 50%;
-  font-size: 16px;
-}
-.no-scroll {
-  overflow: hidden;
-}
-
-
 
