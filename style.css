@@ -47,10 +47,18 @@ button {
 /* ---------- EMOTIONS ---------- */
 .moods {
   display: flex;
-  gap: 12px;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 24px;
+}
+
+.moods button {
+  width: 100%;
+  max-width: 320px;
   padding: 20px;
-  overflow-x: auto;
-  justify-content: center;
+  font-size: 18px;
+  border-radius: 18px;
 }
 
 .moods button {
@@ -135,5 +143,6 @@ button {
 .no-scroll {
   overflow: hidden;
 }
+
 
 
